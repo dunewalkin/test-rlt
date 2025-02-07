@@ -1,12 +1,12 @@
 <script setup lang="ts">
-   import Sidebar from './components/Sidebar.vue';
    import Inventory from './components/Inventory.vue';
    import FooterComponent from './components/Footer.vue';
+   import MainCard from './components/MainCard.vue';
 </script>
 
 <template>
    <div class="main-page">
-     <Sidebar />
+     <MainCard />
      <Inventory />
      <FooterComponent />
    </div>

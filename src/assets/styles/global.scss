@@ -1,3 +1,12 @@
+@font-face {
+   font-family: "SF Pro Display";
+   src:   local("SF Pro Display Regular"),
+          url(../fonts/SFProDisplay-Regular.woff2) format('woff2'),
+          url(../fonts/SFProDisplay-Regular.woff) format('woff');
+   font-style: normal;
+   font-weight: 400;
+}
+
 html,
 body {
     height: 100%;
@@ -5,32 +14,42 @@ body {
 
 *, *::before, *::after {
    box-sizing: border-box;
- }
+}
 
- * {
+* {
    margin: 0;
- }
+}
 
- body {
+body {
    line-height: 1.5;
    -webkit-font-smoothing: antialiased;
- }
+}
 
- img, picture, video, canvas, svg {
+img, picture, video, canvas, svg {
    display: block;
    max-width: 100%;
- }
+}
 
- input, button, textarea, select {
+input, button, textarea, select {
    font: inherit;
- }
- 
- p, h1, h2, h3, h4, h5, h6 {
+}
+
+p, h1, h2, h3, h4, h5, h6 {
    overflow-wrap: break-word;
- }
+}
+
+button {
+   cursor: pointer;
+}
 
 body {
    background-color: var(--primary-background);
+   font-family: Inter;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+
+
 }
 
 #app {
@@ -42,3 +61,5 @@ body {
    justify-content: center;
    align-items: center;
 }
+
+
